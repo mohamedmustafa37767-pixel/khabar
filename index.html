@@ -1,73 +1,197 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>خبر - أخبار عامة ورياضية</title>
+
+    <meta name="description"
+        content="خبر - موقع إخباري يقدم أحدث الأخبار العامة والرياضية من حول العالم.">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
- <header>
-    <div class="logo">
-        <span>خ</span>
-        <h1>خبر</h1>
-    </div>
+    <!-- رأس الموقع -->
+    <header>
 
-    <p>أخبارك من كل مكان</p>
-</header>
+        <div class="logo">
+            <span>خ</span>
+            <h1>خبر</h1>
+        </div>
 
+        <p>أخبارك من كل مكان</p>
+
+    </header>
+
+
+    <!-- القائمة -->
     <nav>
-        <button onclick="showHome()">الرئيسية</button>
-        <button onclick="showGeneral()">الأخبار العامة</button>
-        <button onclick="showSports()">أخبار الرياضة</button> 
-<button onclick="showPolitics()">أخبار السياسة</button>
+
+        <button onclick="showHome()">
+            الرئيسية
+        </button>
+
+        <button onclick="showGeneral()">
+            الأخبار العامة
+        </button>
+
+        <button onclick="showSports()">
+            أخبار الرياضة
+        </button>
+
+        <button onclick="showPolitics()">
+            أخبار السياسة
+        </button>
 
         <br><br>
 
-        <input type="text" id="searchInput" placeholder="اكتب كلمة للبحث">
-        <button onclick="searchNews()">بحث</button>
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="اكتب كلمة للبحث"
+        >
+
+        <button onclick="searchNews()">
+            بحث
+        </button>
+
     </nav>
 
+
+    <!-- الأخبار -->
     <main id="news">
 
-    <section class="hero-news">
-        <img src="https://picsum.photos/1000/500?random=70">
+        <!-- الخبر الرئيسي -->
+        <article class="news-card">
 
-        <div class="hero-content">
-            <span>خبر عاجل</span>
-            <h2>أهم الأخبار والأحداث حول العالم</h2>
+            <img
+                src="https://picsum.photos/1000/500?random=90"
+                alt="أهم مباريات اليوم"
+            >
+
+            <h2>
+                أهم مباريات اليوم الأربعاء 9 سبتمبر 2026
+            </h2>
+
+            <small>
+                رياضة | 9 سبتمبر 2026
+            </small>
+
             <p>
-                تابع معنا آخر الأخبار والتطورات في مختلف المجالات
-                من خلال موقع خبر.
+                تتجه أنظار عشاق كرة القدم اليوم الأربعاء
+                9 سبتمبر 2026 إلى مجموعة من المواجهات القوية
+                في دوري أبطال أوروبا، أبرزها مباراة ليفربول
+                أمام أتلتيكو مدريد، ومواجهة نابولي ضد أرسنال،
+                إلى جانب لقاء برشلونة وفينورد.
             </p>
 
-            <button>اقرأ المزيد</button>
-        </div>
-    </section>
 
-</main>
+            <h3>
+                برشلونة ضد فينورد
+            </h3>
 
-        <h2>أحدث الأخبار</h2>
+            <p>
+                يلتقي برشلونة مع فينورد في مواجهة مرتقبة،
+                وتنطلق المباراة في تمام الساعة
+                7:45 مساءً بتوقيت مصر.
+            </p>
 
-        <div class="news-card">
-            <img src="https://picsum.photos/800/400?random=30">
-            <h3>أهم الأخبار العامة</h3>
-            <p>تابع آخر الأخبار والأحداث من مختلف أنحاء العالم.</p>
-            <small>8 سبتمبر 2026</small>
-        </div>
 
-        <div class="news-card">
-            <img src="https://picsum.photos/800/400?random=31">
-            <h3>أحدث أخبار الرياضة</h3>
-            <p>تابع آخر أخبار كرة القدم والرياضات المختلفة.</p>
-            <small>8 سبتمبر 2026</small>
-        </div>
+            <h3>
+                ليفربول ضد أتلتيكو مدريد
+            </h3>
+
+            <p>
+                يلتقي ليفربول مع أتلتيكو مدريد في مواجهة قوية،
+                وتنطلق المباراة في تمام الساعة
+                10:00 مساءً بتوقيت مصر.
+            </p>
+
+
+            <h3>
+                باريس سان جيرمان ضد سلوفان براتيسلافا
+            </h3>
+
+            <p>
+                يواجه باريس سان جيرمان فريق سلوفان براتيسلافا،
+                وتنطلق المباراة في تمام الساعة
+                10:00 مساءً بتوقيت مصر.
+            </p>
+
+
+            <h3>
+                نابولي ضد أرسنال
+            </h3>
+
+            <p>
+                يواجه نابولي نظيره أرسنال في مباراة قوية،
+                وتنطلق المباراة في تمام الساعة
+                10:00 مساءً بتوقيت مصر.
+            </p>
+
+
+            <h3>
+                سبورتنج لشبونة ضد جالاتا سراي
+            </h3>
+
+            <p>
+                يلتقي سبورتنج لشبونة مع جالاتا سراي
+                في مباراة قوية، وتنطلق في تمام الساعة
+                10:00 مساءً بتوقيت مصر.
+            </p>
+
+
+            <h3>
+                أبرز مباريات اليوم
+            </h3>
+
+            <ul>
+
+                <li>
+                    برشلونة × فينورد — 7:45 مساءً
+                </li>
+
+                <li>
+                    شتوتجارت × فيكينج — 7:45 مساءً
+                </li>
+
+                <li>
+                    ليفربول × أتلتيكو مدريد — 10:00 مساءً
+                </li>
+
+                <li>
+                    باريس سان جيرمان × سلوفان براتيسلافا — 10:00 مساءً
+                </li>
+
+                <li>
+                    سبورتنج لشبونة × جالاتا سراي — 10:00 مساءً
+                </li>
+
+                <li>
+                    نابولي × أرسنال — 10:00 مساءً
+                </li>
+
+            </ul>
+
+
+            <p>
+                <strong>
+                    المصدر:
+                </strong>
+
+                جدول مباريات دوري أبطال أوروبا.
+            </p>
+
+        </article>
 
     </main>
 
+
+    <!-- ملف JavaScript -->
     <script src="script.js"></script>
 
 </body>
