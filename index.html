@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خبر - أخبار عامة ورياضية</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+ <header>
+    <div class="logo">
+        <span>خ</span>
+        <h1>خبر</h1>
+    </div>
+
+    <p>أخبارك من كل مكان</p>
+</header>
+
+    <nav>
+        <button onclick="showHome()">الرئيسية</button>
+        <button onclick="showGeneral()">الأخبار العامة</button>
+        <button onclick="showSports()">أخبار الرياضة</button> 
+<button onclick="showPolitics()">أخبار السياسة</button>
+
+        <br><br>
+
+        <input type="text" id="searchInput" placeholder="اكتب كلمة للبحث">
+        <button onclick="searchNews()">بحث</button>
+    </nav>
+
+    <main id="news">
+
+    <section class="hero-news">
+        <img src="https://picsum.photos/1000/500?random=70">
+
+        <div class="hero-content">
+            <span>خبر عاجل</span>
+            <h2>أهم الأخبار والأحداث حول العالم</h2>
+            <p>
+                تابع معنا آخر الأخبار والتطورات في مختلف المجالات
+                من خلال موقع خبر.
+            </p>
+
+            <button>اقرأ المزيد</button>
+        </div>
+    </section>
+
+</main>
+
+        <h2>أحدث الأخبار</h2>
+
+        <div class="news-card">
+            <img src="https://picsum.photos/800/400?random=30">
+            <h3>أهم الأخبار العامة</h3>
+            <p>تابع آخر الأخبار والأحداث من مختلف أنحاء العالم.</p>
+            <small>8 سبتمبر 2026</small>
+        </div>
+
+        <div class="news-card">
+            <img src="https://picsum.photos/800/400?random=31">
+            <h3>أحدث أخبار الرياضة</h3>
+            <p>تابع آخر أخبار كرة القدم والرياضات المختلفة.</p>
+            <small>8 سبتمبر 2026</small>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
